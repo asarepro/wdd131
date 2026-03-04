@@ -1,6 +1,6 @@
 :root{
     --font: Montserrat ;
-    --first-color: rgb(31, 31, 175);
+    --first-color: #521DCD;
 }
 
 
@@ -137,6 +137,7 @@ figure img {
     font-family: var(--font);
     font-size: 1.1rem;
 }
+
 
 footer {
     margin-top: 24px;
