@@ -15,6 +15,11 @@ body{
     font-size: 100%;
 }
 
+header{
+    max-width: 100%;
+    height: auto;
+}
+
 #course-title{
     display: block;
     text-align: center;
@@ -45,7 +50,7 @@ nav ul li a{
     display: block;
     text-decoration: none;
     transition: .2s ease-in;
-    color: rgb(13, 7, 19);
+    color: rgb(13, 17, 19);
     font-size: 1rem;
     font-family: var(--font) sans-serif;
     color: white;
@@ -56,6 +61,11 @@ a:hover{
     text-decoration: 1px solid black underline;
     color: rgb(48, 40, 40);
     background-color: rgb(244, 237, 237);
+}
+
+main{
+    max-width: 100%;
+    height: auto;
 }
 
 h1{
