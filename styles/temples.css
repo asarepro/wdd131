@@ -1,0 +1,113 @@
+:root{
+    --secondary-color: rgb(210, 175, 150);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    font-family:"Iosevka Charon Mono" ;
+}
+
+header{
+    background-color: var(--secondary-color);
+}
+
+#title{
+    font-size: 1.9rem;
+    padding: 5px;
+}
+
+#menu{
+    border: none;
+    width: 12%;
+    height: auto;
+    position: absolute;
+    right: .5rem;
+    margin: 5px;
+}
+
+#menu::before{
+    content: '☰';
+    font-size: 1.3rem;
+}
+
+#menu.open::before{
+    content: '❌';
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.navigation a{
+    display: none;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: rgb(26, 33, 33);
+}
+
+
+.navigation a:hover{
+    background-color: white;
+    color: black;
+}
+
+.open a{
+    display: block;
+    transition: .5s;
+}
+
+main{
+    max-width: 100%;
+    margin: auto 2rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.figure-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.3rem;
+}
+
+figure{
+    width: 100%;
+    height: 100%;
+}
+
+figure:hover img{
+    scale: .9;
+}
+
+figure > img{
+    max-width: 100%;
+    transition: .5s;
+}
+
+figcaption{
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+footer{
+    margin-top: 70px;
+    text-align: center;
+    height: 100%;
+    background-color: var(--secondary-color);
+}

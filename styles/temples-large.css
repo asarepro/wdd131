@@ -1,0 +1,118 @@
+ @media screen and (min-width:500px) {
+     h1 {
+         text-align: center;
+     }
+
+     .figure-container {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 2rem;
+         row-gap: 5rem;
+         margin-top: 50px;
+     }
+
+    figure>img {
+             max-width: 100%;
+             height: 100%;
+     }
+
+
+     footer{
+        margin-top: 70px;
+     }
+ }
+
+@media screen and (min-width:768px){
+    header{
+        background-color: rgb(210, 175, 150);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        padding: 5px;
+        align-content: center;
+        margin-bottom: 50px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    main{
+        margin: auto 6.4rem;
+    }
+
+    #title{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .navigation{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 10px;
+    }
+
+    .navigation a{
+        text-decoration: none;
+        background-color: white;
+        display: block;
+        padding: 3px;
+        border-radius: 5px;
+        transition: .5s;
+        font-size: 1.2rem;
+        padding: 0px 19px;
+        color: black;
+    }
+
+    .navigation a:hover{
+        background-color: black;
+        color: white;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .figure-container{
+        margin-top: 2.7rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.3rem;
+        row-gap: 5rem;
+    }
+
+    figure{
+        max-width: 100%;
+        border-radius: 4rem;
+        height: auto;
+    }
+
+    figure > img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    figcaption{
+        max-width: 100%;
+        text-align: center;
+        height:auto;
+        background-color: rgb(210, 175, 150);
+    }
+
+    footer{
+        margin-top: 70px;
+        background-color: rgb(210, 175, 150);
+        height: 3.5rem;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    }
+
+
+
+   
