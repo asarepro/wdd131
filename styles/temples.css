@@ -22,6 +22,7 @@ header{
     padding: 5px;
 }
 
+
 #menu{
     border: none;
     width: 12%;
@@ -40,7 +41,7 @@ header{
     content: '❌';
 }
 
-.navigation{
+nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
