@@ -135,10 +135,14 @@ footer{
         border-radius: 10px;
     }
 
-    .second-section h2 img{
-        width: 15%;
-        background-color: aliceblue;
-        display: inline-block;
+    .second-section h2::after{
+       content:' ';
+       width: 20px;
+       height: 20px;
+       margin-left: 5px;
+       display: inline-block;
+       background-color: white;
+       background-image: url('../images/cloud-solid-full.svg');
     }
 
     .second-section img{
