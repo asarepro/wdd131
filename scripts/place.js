@@ -12,7 +12,7 @@ function calculateWindChill (temp,Windspeed) {
 
 function displaywindChill() {
     if (temperatureF <= 50 && Wind_speed > 3) {
-        Wind_chill.textContent = `${calculateWindChill(temperatureF, Wind_speed).toFixed(1)} °F `;
+        Wind_chill.textContent = `${calculateWindChill(temperatureF, Wind_speed).toFixed(1)}°F `;
     }
 
     else {
