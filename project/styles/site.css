@@ -1,3 +1,8 @@
+:root{
+    --first-font:"Montserrat";
+    --second-font:"Lato";
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -17,6 +22,7 @@ main{
     border-top-right-radius: 20px;
     box-shadow: 10px 12px 20px;
 }
+
 
 p{
     margin: 20px;
