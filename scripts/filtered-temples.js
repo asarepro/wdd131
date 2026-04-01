@@ -130,3 +130,5 @@ function templeCards() {
         document.querySelector('.figure-container').appendChild(card);
     })
 }
+
+temples.forEach((temp,index) => { console.log(index+1,temp.templeName) });
