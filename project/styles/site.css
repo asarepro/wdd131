@@ -38,3 +38,11 @@ p{
     background-color: #C9DAEA;
     
 }
+
+.montserrat-font{
+    font-family: var(--first-font), sans-serif;
+}
+
+.lato-font{
+    font-family: var(--second-font), serif;
+}
