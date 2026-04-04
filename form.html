@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="best practices in form application for appealing form and interactivivty following best principles.">
+    <meta name="author" content="Asare Jeffrey">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>form application</title>
+</head>
+<body>
+    <head>
+        <h1>Product Review</h1>
+    </head>
+    <main>
+        <form action="review.html" method="get">
+
+            <label>Product Name
+                <select name="product" id="pd" required>
+                    <option value="" disabled selected>Select a product</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </label>
+
+            <div class="text">Overall Rating</div>
+            <div class="lb">
+            <label>
+                ⭐
+                <input type="radio" name="stars">
+            </label>
+            
+            <label>
+                ⭐⭐
+                <input type="radio" name="stars">
+            </label>
+            
+            <label>
+                ⭐⭐⭐
+                <input type="radio" name="stars">
+            </label>
+            <label>
+                ⭐⭐⭐⭐
+                <input type="radio" name="stars">
+            </label>
+            <label>
+                ⭐⭐⭐⭐⭐
+                <input type="radio" name="stars">
+            </label>
+            </div>
+            <br>
+            
+            <label>
+                <div class="date">Date of Installation</div>
+                <input type="date" name="date">
+            </label>
+
+            <br>
+            <br>
+    
+                Which features didi you find it useful in this products? <br>
+                <label><input type="checkbox" name="Durability"> Durability<br></label>
+                <label><input type="checkbox" name="Ease"> Ease of use<br></label>
+                <label><input type="checkbox" name="Performance"> Performance<br></label>
+                <label><input type="checkbox" name="Design"> Design</label>
+
+                <br>
+                <br>
+                <label>
+                    Written Review (Optional)
+                    <br>
+                    <textarea name="message"></textarea>
+                </label>
+
+                <br>
+                <br>
+                <label>
+                    Your Name(Optional)
+                    <br>
+                    <input type="text" name="userName">
+                </label>
+
+                <br>
+                
+                <input type="submit" value="Post Review">
+            
+        </form>
+    </main>
+
+    <footer>
+        <p id="year"><span>&copy;</span></p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

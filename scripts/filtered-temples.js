@@ -102,7 +102,7 @@ const temples = [
     }
 ];
 
-templeCards();
+templeCards(temples);
 
 function templeCards() {
     temples.forEach(temple => {
@@ -131,4 +131,41 @@ function templeCards() {
     })
 }
 
-temples.forEach((temp,index) => { console.log(index+1,temp.templeName) });
+// // temples.forEach((temp,index) => { console.log(index+1,temp.templeName) });
+// let ys = document.querySelector('#old');
+
+// ys.addEventListener('click',
+//     function () {
+//         // let fil_arr = ;
+//         templeCards(temples.filter(temple => !temple.location.includes("Utah")));
+//     }
+// )
+
+// function templeCards(param) {
+//     param.forEach(temple => {
+//         let card = document.createElement('section');
+//         let name = document.createElement('h3');
+//         let location = document.createElement('p');
+//         let dedication = document.createElement('p');
+//         let area = document.createElement('p');
+//         let image = document.createElement('img');
+
+//         name.textContent = temple.templeName;
+//         location.innerHTML = `<span class="label">Location:</span>${temple.location}`;
+//         dedication.innerHTML = `<span class="label>Dedicated:</span> ${temple.dedicated}`;
+//         area.innerHTML = `<span>Size:</span>${temple.area} sq ft`;
+//         image.setAttribute('src', temple.imageUrl);
+//         image.setAttribute('alt', `${temple.templeName}`);
+//         image.setAttribute('loading', 'lazy');
+
+//         card.appendChild(name);
+//         card.appendChild(location);
+//         card.appendChild(dedication);
+//         card.appendChild(area);
+//         card.appendChild(image);
+
+//         document.querySelector('.figure-container').appendChild(card);
+//     })
+// }
+
+
