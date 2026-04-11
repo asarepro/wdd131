@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our fashion designs collection. Stylish clothes available at 30 GH each. Responsive layout with easy navigation across mobile, tablet, and laptop devices.">
+    <meta name="author" content="Asare Jeffret">
+    <link rel="stylesheet" href="styles/fashion.css">
+    <script src="scripts/index.js" defer></script>
+    <title>Clothes Page</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9fafc;
+            margin: 0;
+        }
+
+        main{
+            padding: 30px;
+            width: 100%;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item > img {
+            width: 100%;
+            display: block;
+            height: 70%;
+        }
+
+        .info1 {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .info1 > h2 {
+            margin: 0;
+            font-size: .8rem;
+            color: #444;
+        }
+
+        .price {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(76, 175, 80, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .item:hover .price {
+            opacity: 1;
+        }
+
+        /* Responsive columns */
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .info1 > h2{
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .info1 > h2{
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="small-container">
+            <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="logo"></a></div>
+            <button aria-label="button" class="menu-button"></button>
+        </div>
+        <nav>
+            <ul class="menu_close">
+                <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="about-us.html">About-Us</a></li>
+                <li><a href="contact-us.html">Contact-us</a></li>
+                <li><a href="cloths.html">Clothes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+    <h1>👕 Clothes Collection</h1>
+    <div class="grid">
+        <div class="item">
+            <img src="images/clothes.webp" alt="Fashion Design 1">
+            <div class="info">
+                <h2>Fashion Design 1</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+        <div class="item">
+            <img src="images/attractive-young.webp" alt="Fashion Design 2">
+            <div class="info1">
+                <h2>Fashion Design 2</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+        <div class="item">
+            <img src="images/clothes1.webp" alt="Fashion Design 3">
+            <div class="info1">
+                <h2>Fashion Design 3</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+
+        <div class="item">
+            <img src="images/fashion-street.webp" alt="Fashion Design 3">
+            <div class="info1">
+                <h2>Fashion Design 3</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+
+        <div class="item">
+            <img src="images/fashion_blog.webp" alt="Fashion Design 3">
+            <div class="info1">
+                <h2>Fashion Design 3</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+
+        <div class="item">
+            <img src="images/glassesshop-man.webp" alt="Fashion Design 3">
+            <div class="info1">
+                <h2>Fashion Design 3</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+
+        <div class="item">
+            <img src="images/men_suit.webp" alt="Fashion Design 3">
+            <div class="info1">
+                <h2>Fashion Design 3</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+
+        <div class="item">
+            <img src="images/nice_cloth.webp" alt="Fashion Design 3">
+            <div class="info1">
+                <h2>Fashion Design 3</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+
+        <div class="item">
+            <img src="images/two-beautiful.webp" alt="Fashion Design 3">
+            <div class="info1">
+                <h2>Fashion Design 3</h2>
+            </div>
+            <div class="price">30 GH</div>
+        </div>
+    </div>
+    </main>
+
+        <footer>
+            <p id="year"><span>&copy;</span></p>
+            <p id="lastModified"></p>
+        </footer>
+</body>
+
+</html>

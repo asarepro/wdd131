@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Luxe Fashion</title>
+    <link rel="stylesheet" href="styles/fashion.css">
+    <script src="scripts/index.js" defer></script>
+    <meta name="description" content="Get in touch with Luxe Fashion. Fill out our contact form to connect with our team for inquiries, collaborations, or customer support.">
+    <meta name="author" content="Asare Jeffrey">
+</head>
+
+<body>
+
+    <header>
+        <div class="small-container">
+            <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="logo"></a></div>
+            <button aria-label="button" class="menu-button"></button>
+        </div>
+        <nav>
+            <ul class="menu_close">
+                <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="about-us.html">About-Us</a></li>
+                <li><a href="contact-us.html">Contact-us</a></li>
+                <li><a href="cloths.html">Clothes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <section class="form-section">
+        <h1>Contact Us</h1>
+        <form id="contactForm" action="recevied.html" method="get">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name">
+                <div class="error" id="nameError"></div>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address">
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                <div class="error" id="messageError"></div>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    </main>
+
+    <footer>
+        <p id="year"><span>&copy;</span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
