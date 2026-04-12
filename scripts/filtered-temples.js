@@ -131,6 +131,7 @@ function templeCards() {
     })
 }
 
+
 // // temples.forEach((temp,index) => { console.log(index+1,temp.templeName) });
 // let ys = document.querySelector('#old');
 
